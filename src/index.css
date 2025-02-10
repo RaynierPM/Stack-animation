@@ -1,0 +1,73 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100%;
+  
+
+}
+
+.controllers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+}
+
+.chip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+
+  padding: 10px 15px;
+  background-color: aquamarine;
+  
+  animation: slideIn 1.3s ease-in;
+}
+
+.chipContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px dashed #ccc;
+
+  margin: 10px 0;
+
+  overflow-x: hidden;
+}
+
+@keyframes slideIn {
+  /* 0% {
+    transform: translateX(50vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  } */
+  0% {
+    transform: translateX(100vw);
+  } 25% {
+    transform: translateX(-15vw);
+  }50% {
+    transform: translateX(10vw);
+  }65% {
+    transform: translateX(0vw);
+  }80% {
+    transform: translateX(5vw);
+  }95% {
+    transform: translateX(0vw);
+  } 97% {
+    transform: translateX(2.5vw);
+  } 100% {
+    transform: translateX(0);
+  }
+}
